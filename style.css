@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#74c0fc,#a5d8ff);
+    padding: 12px;
+}
+
+.to-do-app{
+    background-color: #f8f9fa;
+    max-width: 570px;
+    min-width: 280px;
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 24px;
+    padding-bottom: 60px;
+}
+
+.to-do{
+    display: flex;
+    align-items: center;
+    
+    gap: 32px;
+    
+}
+
+.to-do .icon-todo{
+    font-size: 54px;
+    color: #f59f00;
+}
+
+.to-do h1{
+    font-size: 42px;
+    color: #343a40;
+}
+
+.row{
+    background: #fff3bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    
+    margin: 25px 0;
+    height: 55px;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+
+.row input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    padding-left: 24px;
+    
+}
+
+.btn{
+    max-width: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #ff6b6b;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+    font-size: 24px;
+    display: flex;
+    gap: 24px;
+    
+}
+
+.circle-emty{
+    color: #adb5bd;
+    
+}
+
+.checked{
+    text-decoration: line-through;
+    color: #a5a8aa;
+}
+
+.hidden{
+    display: none;
+    
+}
+
+ul li{
+    font-size: 34px;
+    user-select: none;
+    margin: auto 40px;
+    position: relative;
+    
+}
+
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+li::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/circleEmty.png);
+    background-size: cover;
+    background-position: center;
+    left: -40px;
+    top: 5px;
+    
+    
+
+}
+
+#list-container .checked::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/checkedCirle.png);
+    background-size: cover;
+    background-position: center;
+    left: -40px;
+    top: 5px;
+}
+
+li span{
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+li span:hover{
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    background-color: #c9caca;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+
+}
